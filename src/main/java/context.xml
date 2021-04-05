@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+<bean id="mb" class="com.wolken.wolkenapp.bean.MobileBean">
+<property name="mobileName" value="redmi 10 pro"></property>
+<property name="price" value="100000"></property>
+<property name="processor" value="snapdragon950"></property>
+<property name="appsBean" ref="ap"></property>
+
+</bean>
+<bean id="ap" class="com.wolken.wolkenapp.bean.AppsBean">
+<constructor-arg value="Instagram"></constructor-arg>
+<constructor-arg value="entertainment"></constructor-arg>
+<!-- <property name="noOfPotHoles" value="23"></property>
+<property name="area" value="12*11"></property> -->
+</bean>
+
+
+</beans>
